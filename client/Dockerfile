@@ -2,7 +2,7 @@ FROM node:alpine as build
 
 COPY pacage.json pacage-lock.json
 RUN npm install
-COPY ..
+COPY . .
 
 FROM nginx:stable-alpine
 

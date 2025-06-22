@@ -1,6 +1,6 @@
 FROM node:alpine as build
 
-COPY pacage.json pacage-lock.json
+COPY package.json package-lock.json
 RUN npm install
 COPY . .
 
